@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>짱구게임</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/backpack.png">
+  <script type="module" src="src/main.js" defer></script>
+  <script src="https://kit.fontawesome.com/7a0f403e70.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="game">
+    <section class="game-header">
+      <div class="buttons">
+        <button class="game-start-button">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button class="game-stop-button">
+          <i class="fa-solid fa-stop"></i>
+        </button>
+      </div>
+      <span class="game-timer">0 : 20</span>
+      <span class="game-score">15</span>
+    </section>
+    <div class="heart">
+      <i class="fa-solid fa-heart heart1" style="color: #e6b7dc;"></i>
+      <i class="fa-solid fa-heart heart2" style="color: #e6b7dc;"></i>
+      <i class="fa-solid fa-heart heart3" style="color: #e6b7dc;"></i>
+      <i class="fa-solid fa-heart heart4" style="color: #e6b7dc;"></i>
+      <i class="fa-solid fa-heart heart5" style="color: #e6b7dc;"></i>
+    </div>
+    <div class="game-field"></div>
+  </div>
+
+  <audio src=""></audio>
+
+
+  <section class="pop-up game-start-hide">
+    <button class="pop-up-refresh">
+      <i class="fa-solid fa-rotate-right"></i>
+    </button>
+    <span class="pop-up-message">다시 한번 도전해보세요!</span>
+    <img src="img/hello.png" alt="인사하는 짱구 이미지">
+  </section>
+
+
+  <section class="game-start game-start-hide">
+    <span class="start-message">제한 시간 안에 "가방을 메고 있는 짱구"를 모두 찾으세요!</span>
+    <img src="img/backpack.png" alt="가방메고 있는 짱구 이미지">
+    <button class="OkButton">
+      <i class="fa-solid fa-check"></i>
+    </button>
+  </section>
+
+</body>
+
+</html>
