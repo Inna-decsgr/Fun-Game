@@ -2,7 +2,7 @@
 
 import * as sound from './sound.js';
 
-const CHAR_SIZE = 150;
+const CHAR_SIZE = 80;
 
 export const ItemType = Object.freeze({
   backpack: 'backpack',
@@ -19,27 +19,28 @@ export default class Field{
     this.gameField.addEventListener('click', this.onClick);
   }
 
+  
   setClickListener(onItemClick){
     this.onItemClick = onItemClick;
   }
 
   init() {
     this.gameField.innerHTML = '';
-    this._addItem('backpack', 15, 'img/backpack.png');
-    this._addItem('else', 2, 'img/back.png');
-    this._addItem('else', 2, 'img/dancing.png');
-    this._addItem('else', 3, 'img/heart.png');
-    this._addItem('else', 3, 'img/hello.png');
-    this._addItem('else', 2, 'img/hug.png');
-    this._addItem('else', 2, 'img/marathon.png');
-    this._addItem('else', 2, 'img/bling.png');
-    this._addItem('else', 2, 'img/v.png');
-    this._addItem('else', 2, 'img/soccer.png');
-    this._addItem('else', 2, 'img/action.png');
-    this._addItem('else', 2, 'img/chulsu.png');
-    this._addItem('else', 2, 'img/yuri.png');
-    this._addItem('else', 2, 'img/hoon.png');
-    this._addItem('else', 2, 'img/buriburi.png');
+    this._addItem('backpack', this.backpackCount, 'img/backpack.png');
+    this._addItem('else', this.elseCount, 'img/back.png');
+    this._addItem('else', this.elseCount, 'img/dancing.png');
+    this._addItem('else', this.elseCount, 'img/heart.png');
+    this._addItem('else', this.elseCount, 'img/hello.png');
+    this._addItem('else', this.elseCount, 'img/hug.png');
+    this._addItem('else', this.elseCount, 'img/marathon.png');
+    this._addItem('else', this.elseCount, 'img/bling.png');
+    this._addItem('else', this.elseCount, 'img/v.png');
+    this._addItem('else', this.elseCount, 'img/soccer.png');
+    this._addItem('else', this.elseCount, 'img/action.png');
+    this._addItem('else', this.elseCount, 'img/chulsu.png');
+    this._addItem('else', this.elseCount, 'img/yuri.png');
+    this._addItem('else', this.elseCount, 'img/hoon.png');
+    this._addItem('else', this.elseCount, 'img/buriburi.png');
   }
   _addItem(className, count, imgPath) {
     const x1 = 0;
@@ -50,8 +51,8 @@ export default class Field{
       const item = document.createElement('img');
       item.setAttribute('class', className);
       item.setAttribute('src', imgPath);
-      item.style.width = `140px`;
-      item.style.height = `140px`;
+      item.style.width = `80px`;
+      item.style.height = `80px`;
       const x = randomNumber(x1, x2);
       const y = randomNumber(y1, y2);
       item.style.position = 'absolute';

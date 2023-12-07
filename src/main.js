@@ -16,7 +16,7 @@ gameFinishBanner.setClickListener(() => {
 const game = new GameBuilder()
 .widthGameDuration(20)
 .withBackpackCount(15)
-.withElseCount(10)
+.withElseCount(2)
 .build();
 
 game.setGameStopListener((reason) => {
