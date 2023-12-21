@@ -32,4 +32,4 @@
 
 
 #### 배포 링크 📌
-https://cute-mooncake-7dfe3f.netlify.app/
+https://cute-mooncake-7dfe3f.netlify.app
