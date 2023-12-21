@@ -2,7 +2,7 @@
 
 import * as sound from './sound.js';
 
-const CHAR_SIZE = 80;
+const CHAR_SIZE = 50;
 
 export const ItemType = Object.freeze({
   backpack: 'backpack',
@@ -28,19 +28,11 @@ export default class Field{
     this.gameField.innerHTML = '';
     this._addItem('backpack', this.backpackCount, 'img/backpack.png');
     this._addItem('else', this.elseCount, 'img/back.png');
-    this._addItem('else', this.elseCount, 'img/dancing.png');
     this._addItem('else', this.elseCount, 'img/heart.png');
     this._addItem('else', this.elseCount, 'img/hello.png');
     this._addItem('else', this.elseCount, 'img/hug.png');
     this._addItem('else', this.elseCount, 'img/marathon.png');
     this._addItem('else', this.elseCount, 'img/bling.png');
-    this._addItem('else', this.elseCount, 'img/v.png');
-    this._addItem('else', this.elseCount, 'img/soccer.png');
-    this._addItem('else', this.elseCount, 'img/action.png');
-    this._addItem('else', this.elseCount, 'img/chulsu.png');
-    this._addItem('else', this.elseCount, 'img/yuri.png');
-    this._addItem('else', this.elseCount, 'img/hoon.png');
-    this._addItem('else', this.elseCount, 'img/buriburi.png');
   }
   _addItem(className, count, imgPath) {
     const x1 = 0;
@@ -51,8 +43,8 @@ export default class Field{
       const item = document.createElement('img');
       item.setAttribute('class', className);
       item.setAttribute('src', imgPath);
-      item.style.width = `80px`;
-      item.style.height = `80px`;
+      item.style.width = `50px`;
+      item.style.height = `50px`;
       const x = randomNumber(x1, x2);
       const y = randomNumber(y1, y2);
       item.style.position = 'absolute';
